@@ -61,7 +61,9 @@ router.post("/allotmentmail/:id", async (req,res)=>{
             to: participant.email, // dada niket email testing
             subject: "Registration confirmation", 
             text: ``, 
-            html: `Greetings<b>Papa</b>,<br/><br/>Following your registration in <b>NITMUN XI</b>, you are requested to submit a registration fee of <b>Rs {p}</b>.<br/>You may pay using UPI to the following people (UPI IDs provided below) :<br/><br/><b>Pushpal Ghodaskar</b> - pushpalghodaskar-1@okaxis (+91 80556 28645)<br/><b>Archit Lall</b> - archit10dgp@oksbi (+91 91446 48481)<br/><br/>Please mention NITMUN XI- ( your name ) - ( institution ) while sending it. <br/>Let us know when and to whom you have made the payment, via mail. Kindly <b>attach a screenshot</b> of the payment record to the email.<br/><br/>Regards,<br/>Archit Lall,<br/>Under Secretary General,<br/>NITMUN XI.<br/>Contact number - +91 91446 48481`, 
+            html: `Greetings <b>${participant.name}</b>,<br/><br/>Following your registration in <b>NITMUN XI</b>, you are requested to submit a registration fee of <b>Rs ${p}</b>.<br/>You may pay using UPI to the following people (UPI IDs provided below) :<br/><br/><b>Vedang Chauhan</b> -vedangc03@oksbi
+            (+91 90279 79974)<br/><b>Poorab Kumar</b> - poorab.kumar@paytm 
+            (+91 70639 67246)<br/><br/>Please mention NITMUN XI- ( your name ) - ( institution ) while sending it. <br/>Let us know when and to whom you have made the payment, via mail. Kindly <b>attach a screenshot</b> of the payment record to the email.<br/><br/>Regards,<br/>Archit Lall,<br/>Under Secretary General,<br/>NITMUN XI.<br/>Contact number - +91 91446 48481`, 
             
           });
           console.log("success")
@@ -119,7 +121,7 @@ router.post("/paymentmail/:id", async (req,res)=>{
             to: participant.email, // list of receivers
             subject: "Payment Confirmation ", 
             text: "",
-            html: `Dear <b>beta</b>,<br/><br/>Your payment has been received.We look forward to hosting you.<br/> <br/>Regards,<br/>Pushpal Ghodaskar,<br/>Deputy Director General,<br/>NITMUN XI.<br/>Contact - 8055628645.`, 
+            html: `Dear <b>${participant.name}</b>,<br/><br/>Your payment has been received.We look forward to hosting you.<br/> <br/>Regards,<br/>Pushpal Ghodaskar,<br/>Deputy Director General,<br/>NITMUN XI.<br/>Contact - 8055628645.`, 
            
           });
         // console.log("Message sent: %s", info.messageId);

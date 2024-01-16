@@ -20,7 +20,7 @@ function Payment() {
 
   function getData() {
     axios
-      .get("http://localhost:5000/api/payments")
+      .get("https://nitmun-xii-backend.onrender.com/api/payments")
       .then((response) => response.data)
       .then((data) => {
         // console.log(data[1].name);

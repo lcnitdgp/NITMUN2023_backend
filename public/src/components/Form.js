@@ -44,7 +44,7 @@ const handleSubmit=  async (e) =>{
     return;
   }else{
  const data =  await axios
-      .post(`http://localhost:5000/api/login`, {
+      .post(`https://nitmun-xii-backend.onrender.com/api/login`, {
         username:username,
         password:password     
       })

@@ -57,7 +57,7 @@ router.post("/allotmentmail/:id", async (req,res)=>{
         const main = async() => {
             console.log("sending email........")
             const info = await transport.sendMail({
-            from: '"Literary Circle, NIT Durgapur" <pratapankit892@gmail.com>', 
+            from: '"Literary Circle, NIT Durgapur" <verve.nitmun@gmail.com>', 
             to: participant.email, // dada niket email testing
             subject: "Registration confirmation", 
             text: ``, 
@@ -117,7 +117,7 @@ router.post("/paymentmail/:id", async (req,res)=>{
 
         const main = async() => {
           let info = await transport.sendMail({
-            from: '"Literary Circle, NIT Durgapur" <pratapankit892@gmail.com>', 
+            from: '"Literary Circle, NIT Durgapur" <verve.nitmun@gmail.com>', 
             to: participant.email, // list of receivers
             subject: "Payment Confirmation ", 
             text: "",

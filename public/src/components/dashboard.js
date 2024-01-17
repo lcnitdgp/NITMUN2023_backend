@@ -81,7 +81,7 @@ function Dashboard() {
           Allotedmail:true,  
         })
         .then((res) => {
-          // setAllotedmail(true);
+          setAllotedmail(true);
           console.log("sent mail, thank you!");
         });
     };

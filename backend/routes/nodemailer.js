@@ -37,7 +37,7 @@ router.post("/allotmentmail/:id", async (req,res)=>{
             service: 'gmail',
             auth: {
             type: 'OAuth2',
-            user: 'ankitpratap04@gmail.com',
+            user: 'verve.nitmun@gmail.com',
             clientId: CLIENT_ID,
             clientSecret: CLIENT_SECRET,
             refreshToken: REFRESH_TOKEN,
@@ -103,7 +103,7 @@ router.post("/paymentmail/:id", async (req,res)=>{
             service: 'gmail',
             auth: {
             type: 'OAuth2',
-            user: 'ankitpratap04@gmail.com',
+            user: 'verve.nitmun@gmail.com',
             clientId: CLIENT_ID,
             clientSecret: CLIENT_SECRET,
             refreshToken: REFRESH_TOKEN,

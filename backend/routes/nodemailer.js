@@ -6,11 +6,10 @@ const {google} = require("googleapis");
 const { gmail } = require("googleapis/build/src/apis/gmail");
 
 
-const CLIENT_ID = '546844246782-fhj10alj41ke6vse5sk3e1pun0d0j0es.apps.googleusercontent.com'
-const CLIENT_SECRET = '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'
+const CLIENT_ID = '460493599138-nqmt3ppr4nkdnigv73318k5fq1uic8f9.apps.googleusercontent.com'
+const CLIENT_SECRET = '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'
 const REDIRECT_URI = 'https://developers.google.com/oauthplayground'
-const REFRESH_TOKEN = '1//04-h2XFcCf8ykCgYIARAAGAQSNwF-L9IrK4EnDf4N9Ln9UxdhzBI5fAJSf9OShNh1pWcH4RTs7r_oN1eVKkLsz-yvecgdykVnTZ0'
-
+const REFRESH_TOKEN = '1//0467R2Cw_xJrnCgYIARAAGAQSNwF-L9IrkNXakvFj2zsQn8OhpV_bVdBdXaQ2noPbSyn8ivDj8fc1qx6K-SoVJ7rNCxILLGXru9o'
 // const OAuth2 = google.auth.OAuth2;
 
 const oAuth2Client = new google.auth.OAuth2(CLIENT_ID,CLIENT_SECRET,REDIRECT_URI)

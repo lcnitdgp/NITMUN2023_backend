@@ -66,7 +66,7 @@ router.post("/allotmentmail/:id", async (req,res)=>{
             text: ``, 
             html: `Greetings <b>${participant.name}</b>,<br/><br/>Following your registration in <b>NITMUN XII</b>, you are requested to submit a registration fee of <b>Rs ${p}</b>.<br/>You may pay using UPI to the following people (UPI IDs provided below) :<br/><br/><b>Vedang Chauhan</b> -vedangc03@oksbi
             (+91 90279 79974)<br/><b>Poorab Kumar</b> - poorab.kumar@paytm 
-            (+91 70639 67246)<br/><br/>Please mention NITMUN XII- ( your name ) - ( institution ) while sending it. <br/>Let us know when and to whom you have made the payment, via mail. Kindly <b>attach a screenshot</b> of the payment record to the email.<br/><br/>Regards,<br/>Navneet Berwal,<br/>Under Secretary General,<br/>NITMUN XII.<br/>Contact number - +91 85296 22552`, 
+            (+91 70639 67246)<br/><br/>Please mention NITMUN XII- ( your name ) - ( institution ) while sending it. <br/>Let us know when and to whom you have made the payment, via mail. Kindly <b>attach a screenshot</b> of the payment record to the email.<br/>If you want to make the payment through cash you can contact Poorab Kumar (+91 70639 67246) or Vedang Chauhan (+91 90279 79974)<br/>Regards,<br/>Navneet Berwal,<br/>Under Secretary General,<br/>NITMUN XII.<br/>Contact number - +91 85296 22552`, 
             
           });
           console.log("success")

@@ -49,10 +49,10 @@ router.post("/allotmentmail/:id", async (req,res)=>{
           console.log(transport)
           let p =0;
           if(participant.institute == "NIT Durgapur"){
-               p = 600;
+               p = 450;
           }
           else  {
-            p = 1300;
+            p = 1049;
           }
 
           console.log("papa..........")
